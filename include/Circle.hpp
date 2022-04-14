@@ -1,8 +1,8 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-#include "Vector2D.h"
-#include "Color.h"
+#include "Vector2D.hpp"
+#include "Color.hpp"
 
 struct Circle {
     Vector2D position;

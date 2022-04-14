@@ -5,10 +5,10 @@
 
 #include "SDL_render.h"
 
-#include "Window.h"
-#include "Line.h"
-#include "Rectangle.h"
-#include "Circle.h"
+#include "Window.hpp"
+#include "Line.hpp"
+#include "Rectangle.hpp"
+#include "Circle.hpp"
 
 class Render {
 private:

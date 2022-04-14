@@ -1,4 +1,4 @@
-#include "Rectangle.h"
+#include "Rectangle.hpp"
 
 Rectangle::Rectangle() :
     sdl_rect (SDL_Rect()),

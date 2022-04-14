@@ -3,13 +3,13 @@
 
 #include <SDL.h>
 
-#include "ApplicationState.h"
-#include "Window.h"
-#include "Render.h"
-#include "Event.h"
-#include "Rectangle.h"
-#include "Line.h"
-#include "Circle.h"
+#include "ApplicationState.hpp"
+#include "Window.hpp"
+#include "Render.hpp"
+#include "Event.hpp"
+#include "Rectangle.hpp"
+#include "Line.hpp"
+#include "Circle.hpp"
 
 class Application {
 private:

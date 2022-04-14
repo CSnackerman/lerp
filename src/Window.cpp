@@ -1,4 +1,4 @@
-#include "Window.h"
+#include "Window.hpp"
 
 // static init
 SDL_Window* Window::sdl_window = nullptr;

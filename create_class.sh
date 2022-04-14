@@ -4,7 +4,7 @@ printf "Enter a new class name: "
 
 read classname
 
-H_FILE="include/${classname}.h"
+H_FILE="include/${classname}.hpp"
 CPP_FILE="src/${classname}.cpp"
 
 touch ./${H_FILE} ./${CPP_FILE}
