@@ -1,8 +1,10 @@
-#include "Render.hpp"
+#include "render/Render.hpp"
 
 // static init
 
 SDL_Renderer* Render::renderer = nullptr;
+
+// initializers
 
 void Render::initialize() {
     Render::renderer = SDL_CreateRenderer(
@@ -15,6 +17,8 @@ void Render::initialize() {
 void Render::destroy() {
     SDL_DestroyRenderer(Render::renderer);
 }
+
+// utility 
 
 void Render::clear() {
     Render::setColor(Color::darkpurple);

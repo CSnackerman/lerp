@@ -3,7 +3,7 @@
 
 #include <SDL_events.h>
 
-#include "ApplicationState.hpp"
+#include "core/ApplicationState.hpp"
 
 class Event {
 private:

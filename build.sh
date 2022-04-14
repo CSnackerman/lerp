@@ -8,27 +8,33 @@ LIBFLAGS="`sdl2-config --libs`"
 
 
 SOURCES=(
-    main        
-    Application
-    ApplicationState
-    Window
-    Render
-    Event
-    Color
-    Vector2D
-    Line
-    Rectangle
-    Circle
+    main
+    core/Application
+    core/ApplicationState
+    core/Window
+    core/Event
+    render/Render
+    render/renderables/Line
+    render/renderables/Rectangle
+    render/renderables/Circle
+    utility/Vector2D
+    utility/Color
 )
 
 
 # compile sources
 printf "\nCompiling Source Files...\n\n"
 
-for sourcefile in ${SOURCES[@]};
-do
-    printf "clang++ -c ${CFLAGS} ./src/${sourcefile}.cpp -o ./obj/${sourcefile}.o\n"
-    clang++ -c ${CFLAGS} ./src/${sourcefile}.cpp -o ./obj/${sourcefile}.o
+for sourcefile in ${SOURCES[@]}; do
+    # extract sourcename
+    IFS='/'
+    splitsource=(${sourcefile})
+    sourcename=${splitsource[${#splitsource[@]} - 1]}
+    unset IFS
+
+    # compile sourcefile into object file
+    printf "clang++ -c ${CFLAGS} ./src/${sourcefile}.cpp -o ./obj/${sourcename}.o\n"
+    clang++ -c ${CFLAGS} ./src/${sourcefile}.cpp -o ./obj/${sourcename}.o
 done
 
 

@@ -1,4 +1,4 @@
-#include "Event.hpp"
+#include "core/Event.hpp"
 
 // static init
 SDL_Event Event::e = SDL_Event();

@@ -3,8 +3,8 @@
 
 #include <SDL_rect.h>
 
-#include "Vector2D.hpp"
-#include "Color.hpp"
+#include "utility/Vector2D.hpp"
+#include "utility/Color.hpp"
 
 struct Rectangle {
     SDL_Rect sdl_rect;

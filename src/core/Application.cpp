@@ -1,4 +1,4 @@
-#include "Application.hpp"
+#include "core/Application.hpp"
 
 Application::Application() :
     testRect(Rectangle()),

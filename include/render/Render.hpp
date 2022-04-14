@@ -3,12 +3,13 @@
 
 #include <iostream>
 
-#include "SDL_render.h"
+#include <SDL_render.h>
 
-#include "Window.hpp"
-#include "Line.hpp"
-#include "Rectangle.hpp"
-#include "Circle.hpp"
+#include "core/Window.hpp"
+
+#include "render/renderables/Line.hpp"
+#include "render/renderables/Rectangle.hpp"
+#include "render/renderables/Circle.hpp"
 
 class Render {
 private:

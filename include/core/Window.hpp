@@ -5,7 +5,7 @@
 #include <string>
 #include <sstream>
 
-#include "SDL.h"
+#include <SDL.h>
 
 class Window {
 private:

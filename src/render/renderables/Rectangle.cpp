@@ -1,4 +1,4 @@
-#include "Rectangle.hpp"
+#include "render/renderables/Rectangle.hpp"
 
 Rectangle::Rectangle() :
     sdl_rect (SDL_Rect()),
