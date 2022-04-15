@@ -17,6 +17,7 @@ SOURCES=(
     render/renderables/Line
     render/renderables/Rectangle
     render/renderables/Circle
+    render/renderables/Triangle
     utility/Vector2D
     utility/Color
 )
