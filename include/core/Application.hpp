@@ -18,6 +18,7 @@ class Application {
 private:
     Rectangle testRect;
     Line testLine;
+    Vector2D p1, p2;
     float patrolProgress;
     float progressor;
     

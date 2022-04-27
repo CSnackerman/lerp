@@ -1,11 +1,14 @@
 #include "core/Application.hpp"
 
 Application::Application() :
-    testRect (Rectangle(Vector2D(100, 100), 100, 100, Color::blue)),
-    testLine (Line(Vector2D(100, 100), Vector2D(500, 300), Color::green)),
+    p1 (Vector2D(400, 100)),
+    p2 (Vector2D(400, 500)),
     patrolProgress (0.0f),
-    progressor (0.1)
-{}
+    progressor (0.2)
+{
+    testRect = Rectangle(p1, 50, 50, Color::blue);
+    testLine = Line(p1, p2, Color::green);
+}
 
 void Application::initialize() {
     SDL_Init(SDL_INIT_EVERYTHING);
@@ -20,9 +23,9 @@ void Application::run() {
 
     Event::handle();
 
-    // update the rectangle via lerp
+    // update testRect position via lerp
     patrolProgress += progressor * Clock::dt;
-    
+
     if (patrolProgress > 1.0f) {
         patrolProgress = 1.0f;
         progressor = -progressor;
@@ -31,11 +34,9 @@ void Application::run() {
         patrolProgress = 0.0f;
         progressor = -progressor;
     }
-
-    Vector2D p1 = Vector2D(100, 100);
-    Vector2D p2 = Vector2D(500, 300);
     Vector2D currentPosition = p1.lerp(p2, patrolProgress);
     testRect.moveTo (currentPosition);
+    // -----
 
     Render::clear();
 

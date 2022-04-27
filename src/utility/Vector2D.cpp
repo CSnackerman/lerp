@@ -23,5 +23,9 @@ Vector2D Vector2D::lerp (Vector2D p2, float percent) {
 
     float dx = p2.x - this->x;
     float dy = p2.y - this->y;
-    return Vector2D(this->x + dx * percent, this->y + dy * percent);
+    
+    return Vector2D (
+        this->x + dx * percent, 
+        this->y + dy * percent
+    );
 }
