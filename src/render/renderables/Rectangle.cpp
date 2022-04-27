@@ -27,7 +27,7 @@ Rectangle::Rectangle(
 
 void Rectangle::moveTo(Vector2D position) {
     this->position = position;
-    this->sync();
+    sync();
 }
 
 // private utility
