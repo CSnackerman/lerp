@@ -20,6 +20,8 @@ struct Rectangle {
         Color color
     );
 
+    void moveTo(Vector2D position);
+
 private:
     void sync();
 };
