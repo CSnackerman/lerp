@@ -17,6 +17,7 @@ class Application {
 private:
     Rectangle testRect;
     Line testLine;
+    Circle testCircle;
     
 public:
     Application();

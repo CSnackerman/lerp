@@ -3,14 +3,15 @@
 # variables
 TARGET="./executable/lerp"
 
-CFLAGS="-I./include `sdl2-config --cflags`"
-LIBFLAGS="`sdl2-config --libs`"
+CFLAGS="-I./include `pkg-config --cflags SDL2 SDL2_gfx`"
+LIBFLAGS="`pkg-config --libs SDL2 SDL2_gfx`"
 
 
 SOURCES=(
     main
     core/Application
     core/ApplicationState
+    core/Clock
     core/Window
     core/Event
     render/Render

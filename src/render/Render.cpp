@@ -57,4 +57,13 @@ void Render::rectangle(Rectangle& rectangle) {
 }
 
 void Render::circle(Circle& circle) {
+    Render::setColor(circle.color);
+    SDL_Surface circleSurface;
+    int cx = static_cast <int> (circle.position.x);
+    int cy = static_cast <int> (circle.position.y);
+    int radius = static_cast <int> (circle.radius);
+
+    filledCircleColor (Render::renderer, cx, cy, radius, 0x00FF00);
+
+    //TODO
 }

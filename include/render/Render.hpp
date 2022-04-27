@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include <SDL_render.h>
+#include <SDL2_gfxPrimitives.h>
 
 #include "core/Window.hpp"
 
