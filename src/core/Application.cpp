@@ -1,13 +1,13 @@
 #include "core/Application.hpp"
 
 Application::Application() :
-    p1 (Vector2D(400, 100)),
-    p2 (Vector2D(400, 500)),
+    p1 (Vector2D(100, 100)),
+    p2 (Vector2D(700, 500)),
     patrolProgress (0.0f),
     progressor (0.2)
 {
-    testRect = Rectangle(p1, 50, 50, Color::blue);
-    testLine = Line(p1, p2, Color::green);
+    testRect = Rectangle(p1, 50, 50, Color::magenta);
+    testLine = Line(p1, p2, Color::cyan);
 }
 
 void Application::initialize() {
