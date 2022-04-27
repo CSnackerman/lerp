@@ -3,8 +3,8 @@
 # variables
 TARGET="./executable/lerp"
 
-CFLAGS="-I./include `pkg-config --cflags SDL2 SDL2_gfx`"
-LIBFLAGS="`pkg-config --libs SDL2 SDL2_gfx`"
+CFLAGS="-std=c++11 -I./include `pkg-config --cflags SDL2 SDL2_gfx`"
+LIBFLAGS="-std=c++11 `pkg-config --libs SDL2 SDL2_gfx`"
 
 
 SOURCES=(

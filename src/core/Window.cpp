@@ -23,3 +23,7 @@ void Window::destroy() {
 SDL_Window* Window::getSDL_Window() {
     return Window::sdl_window;
 }
+
+void Window::setTitle(std::string title) {
+    SDL_SetWindowTitle(Window::sdl_window, title.c_str());
+}

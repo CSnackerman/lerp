@@ -28,8 +28,8 @@ Rectangle::Rectangle(
 // private utility
 
 void Rectangle::sync() {
-    sdl_rect.x = static_cast <int> (position.x);
-    sdl_rect.y = static_cast <int> (position.y);
+    sdl_rect.x = static_cast <int> (position.x - width / 2);
+    sdl_rect.y = static_cast <int> (position.y - height / 2);
     sdl_rect.w = static_cast <int> (width);
     sdl_rect.h = static_cast <int> (height);
 }

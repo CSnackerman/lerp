@@ -1,9 +1,8 @@
 #include "core/Application.hpp"
 
 Application::Application() :
-    testRect (Rectangle()),
-    testLine (Line(Vector2D(0, 0), Vector2D(800, 600), Color::green)),
-    testCircle (Circle(Vector2D(500, 500), Color::white, 25))
+    testRect (Rectangle(Vector2D(100, 100), 100, 100, Color::blue)),
+    testLine (Line(Vector2D(100, 100), Vector2D(500, 300), Color::green))
 {}
 
 void Application::initialize() {
@@ -15,13 +14,14 @@ void Application::initialize() {
 
 void Application::run() {
 
+    Clock::update();
+
     Event::handle();
 
     Render::clear();
 
     Render::rectangle(testRect);
     Render::line(testLine);
-    Render::circle(testCircle);
 
     Render::update();
 }

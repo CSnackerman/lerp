@@ -5,6 +5,7 @@
 
 #include "core/Application.hpp"
 #include "core/ApplicationState.hpp"
+#include "core/Clock.hpp"
 #include "core/Window.hpp"
 #include "core/Event.hpp"
 
@@ -17,7 +18,6 @@ class Application {
 private:
     Rectangle testRect;
     Line testLine;
-    Circle testCircle;
     
 public:
     Application();
