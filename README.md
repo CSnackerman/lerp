@@ -5,7 +5,7 @@
 ## Install Dependencies
 
 ### MacOS (Apple Silicon)
-brew install sdl2 sdl2_gfx pkg-config
+Execute `brew install sdl2 sdl2_gfx pkg-config`
 
 ## Set Permissions
 1. Open terminal at project root
