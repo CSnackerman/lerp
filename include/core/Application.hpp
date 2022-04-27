@@ -18,6 +18,8 @@ class Application {
 private:
     Rectangle testRect;
     Line testLine;
+    float patrolProgress;
+    float progressor;
     
 public:
     Application();

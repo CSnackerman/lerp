@@ -1,6 +1,8 @@
 #ifndef VECTOR2D_H
 #define VECTOR2D_H
 
+#include <iostream>
+
 class Vector2D {
 public:
     float x, y;
@@ -12,7 +14,7 @@ public:
     void operator= (const Vector2D& rhs);
 
     // Public API
-    Vector2D lerp (Vector2D p1, Vector2D p2, float percent);
+    Vector2D lerp (Vector2D p2, float percent);
 };
 
 #endif
