@@ -1,13 +1,15 @@
 # lerp
 
+
+
 ## Setup
 
-## Install Dependencies
+### Install Dependencies
 
-### MacOS (Apple Silicon)
-brew install sdl2 sdl2_gfx pkg-config
+#### MacOS (Apple Silicon)
+Execute `brew install sdl2 sdl2_gfx pkg-config`
 
-## Set Permissions
+### Set Permissions
 1. Open terminal at project root
 2. Execute `chmod a+x ./build.sh ./clean.sh ./run.sh`
 
