@@ -1,8 +1,8 @@
-#include "render/renderables/Rectangle.hpp"
+#include "render/renderables/primitives/Rectangle.hpp"
 
 Rectangle::Rectangle() :
-    sdl_rect (SDL_Rect()),
-    position (Vector2D()),
+    sdl_rect ({0, 0, 1, 1}),
+    position ({0, 0}),
     width (100.0f),
     height (100.0f),
     color (Color::red)
@@ -16,7 +16,7 @@ Rectangle::Rectangle(
     float height,
     Color color
 ) :
-    sdl_rect (SDL_Rect()),
+    sdl_rect ({0, 0, 1, 1}),
     position (position),
     color (color),
     width (width),

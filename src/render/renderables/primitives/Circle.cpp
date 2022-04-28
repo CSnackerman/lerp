@@ -1,4 +1,4 @@
-#include "render/renderables/Circle.hpp"
+#include "render/renderables/primitives/Circle.hpp"
 
 Circle::Circle() :
     position (Vector2D()),

@@ -1,13 +1,13 @@
 #include "utility/Vector2D.hpp"
 
 Vector2D::Vector2D() :
-    x(0.0f),
-    y(0.0f)
+    x (0.0f),
+    y (0.0f)
 {}
 
 Vector2D::Vector2D(float x, float y) :
-    x(x),
-    y(y)
+    x (x),
+    y (y)
 {}
 
 void Vector2D::operator= (const Vector2D& rhs) {
@@ -15,9 +15,12 @@ void Vector2D::operator= (const Vector2D& rhs) {
     this->y = rhs.y;
 }
 
-Vector2D Vector2D::lerp (Vector2D p2, float percent) {
+Vector2D Vector2D::lerp (const Vector2D& p2, const float& percent) {
     if (percent < 0.0f || percent > 1.0f) {
-        std::cout << "[WARN] invalid percent in Vector2D::lerp()" << std::endl;
+        std::cerr 
+            << "[WARN] invalid percent in Vector2D::lerp()" 
+            << std::endl;
+
         return *this;
     }
 

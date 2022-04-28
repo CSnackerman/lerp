@@ -1,8 +1,8 @@
 #include "core/Application.hpp"
 
 Application::Application() :
-    p1 (Vector2D(100, 100)),
-    p2 (Vector2D(700, 500)),
+    p1 ({100, 100}),
+    p2 ({700, 500}),
     patrolProgress (0.0f),
     progressor (0.2)
 {
@@ -34,8 +34,8 @@ void Application::run() {
         patrolProgress = 0.0f;
         progressor = -progressor;
     }
-    Vector2D currentPosition = p1.lerp(p2, patrolProgress);
-    testRect.moveTo (currentPosition);
+    Vector2D newPosition = p1.lerp(p2, patrolProgress);
+    testRect.moveTo (newPosition);
     // -----
 
     Render::clear();

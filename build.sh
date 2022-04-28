@@ -3,8 +3,9 @@
 # variables
 TARGET="./executable/lerp"
 
-CFLAGS="-std=c++11 -I./include `pkg-config --cflags SDL2 SDL2_gfx`"
-LIBFLAGS="-std=c++11 `pkg-config --libs SDL2 SDL2_gfx`"
+STD="-std=c++11"
+CFLAGS="-I./include `pkg-config --cflags SDL2 SDL2_gfx`"
+LIBFLAGS="`pkg-config --libs SDL2 SDL2_gfx`"
 
 
 SOURCES=(
@@ -15,10 +16,10 @@ SOURCES=(
     core/Window
     core/Event
     render/Render
-    render/renderables/Line
-    render/renderables/Rectangle
-    render/renderables/Circle
-    render/renderables/Triangle
+    render/renderables/primitives/Line
+    render/renderables/primitives/Rectangle
+    render/renderables/primitives/Circle
+    render/renderables/primitives/Triangle
     utility/Vector2D
     utility/Color
 )
@@ -35,12 +36,12 @@ for sourcefile in ${SOURCES[@]}; do
     unset IFS
 
     # compile sourcefile into object file
-    printf "clang++ -c ${CFLAGS} ./src/${sourcefile}.cpp -o ./obj/${sourcename}.o\n"
-    clang++ -c ${CFLAGS} ./src/${sourcefile}.cpp -o ./obj/${sourcename}.o
+    printf "clang++ ${STD} -c ${CFLAGS} ./src/${sourcefile}.cpp -o ./obj/${sourcename}.o\n"
+    clang++ ${STD} -c ${CFLAGS} ./src/${sourcefile}.cpp -o ./obj/${sourcename}.o
 done
 
 
 # link objects
 printf "\nLinking Object (.o) Files & Building Executable Target...\n\n"
-printf "clang++ ${LIBFLAGS} ./obj/* -o ${TARGET}\n\n"
-clang++ ${LIBFLAGS} ./obj/* -o ${TARGET}
+printf "clang++ ${STD} ${LIBFLAGS} ./obj/* -o ${TARGET}\n\n"
+clang++ ${STD} ${LIBFLAGS} ./obj/* -o ${TARGET}

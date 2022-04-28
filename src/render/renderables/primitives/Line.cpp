@@ -1,8 +1,8 @@
-#include "render/renderables/Line.hpp"
+#include "render/renderables/primitives/Line.hpp"
 
 Line::Line() :
-    p1 (Vector2D(0, 0)),
-    p2 (Vector2D(1, 1)),
+    p1 ({0, 0}),
+    p2 ({1, 1}),
     color (Color::red)
 {}
 

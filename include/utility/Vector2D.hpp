@@ -14,7 +14,7 @@ public:
     void operator= (const Vector2D& rhs);
 
     // Public API
-    Vector2D lerp (Vector2D p2, float percent);
+    Vector2D lerp (const Vector2D& p2, const float& percent);
 };
 
 #endif
