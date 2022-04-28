@@ -4,7 +4,8 @@ Application::Application() :
     p1 ({100, 100}),
     p2 ({700, 500}),
     patrolProgress (0.0f),
-    progressor (0.2)
+    progressor (0.2),
+    platform ({{200, 350}, 100, 50, Color::green})
 {
     testRect = Rectangle(p1, 50, 50, Color::magenta);
     testLine = Line(p1, p2, Color::cyan);
@@ -42,6 +43,7 @@ void Application::run() {
 
     Render::rectangle(testRect);
     Render::line(testLine);
+    platform.render();
 
     Render::update();
 }

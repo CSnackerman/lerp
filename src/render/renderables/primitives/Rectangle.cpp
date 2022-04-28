@@ -18,9 +18,9 @@ Rectangle::Rectangle(
 ) :
     sdl_rect ({0, 0, 1, 1}),
     position (position),
-    color (color),
     width (width),
-    height (height)
+    height (height),
+    color (color)
 {
     sync();
 }

@@ -13,6 +13,8 @@
 #include "render/renderables/primitives/Rectangle.hpp"
 #include "render/renderables/primitives/Line.hpp"
 #include "render/renderables/primitives/Circle.hpp"
+#include "render/renderables/custom/Platform.hpp"
+#include "render/renderables/custom/PatrolPlatform.hpp"
 
 class Application {
 private:
@@ -21,6 +23,8 @@ private:
     Vector2D p1, p2;
     float patrolProgress;
     float progressor;
+
+    Platform platform;
     
 public:
     Application();

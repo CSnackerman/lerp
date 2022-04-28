@@ -1,0 +1,1 @@
+#include "render/renderables/custom/PatrolPlatform.hpp"
