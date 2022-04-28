@@ -10,11 +10,11 @@
 #include "core/Event.hpp"
 
 #include "render/Render.hpp"
-#include "render/renderables/primitives/Rectangle.hpp"
-#include "render/renderables/primitives/Line.hpp"
-#include "render/renderables/primitives/Circle.hpp"
-#include "render/renderables/custom/Platform.hpp"
-#include "render/renderables/custom/PatrolPlatform.hpp"
+#include "render/primitives/Rectangle.hpp"
+#include "render/primitives/Line.hpp"
+#include "render/primitives/Circle.hpp"
+#include "render/custom/Platform.hpp"
+#include "render/custom/PatrolPlatform.hpp"
 
 class Application {
 private:

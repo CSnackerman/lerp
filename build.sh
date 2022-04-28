@@ -16,12 +16,12 @@ SOURCES=(
     core/Window
     core/Event
     render/Render
-    render/renderables/primitives/Line
-    render/renderables/primitives/Rectangle
-    render/renderables/primitives/Circle
-    render/renderables/primitives/Triangle
-    render/renderables/custom/Platform
-    render/renderables/custom/PatrolPlatform
+    render/primitives/Line
+    render/primitives/Rectangle
+    render/primitives/Circle
+    render/primitives/Triangle
+    render/custom/Platform
+    render/custom/PatrolPlatform
     utility/Vector2D
     utility/Color
 )

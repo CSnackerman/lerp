@@ -1,4 +1,4 @@
-#include "render/renderables/primitives/Line.hpp"
+#include "render/primitives/Line.hpp"
 
 Line::Line() :
     p1 ({0, 0}),

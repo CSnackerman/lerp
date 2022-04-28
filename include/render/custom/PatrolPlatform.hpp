@@ -1,7 +1,7 @@
 #ifndef PATROL_PLATFORM_H
 #define PATROL_PLATFORM_H
 
-#include "render/renderables/custom/Platform.hpp"
+#include "render/custom/Platform.hpp"
 
 class PatrolPlatform : public Platform {
 private:

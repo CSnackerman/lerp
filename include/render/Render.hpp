@@ -8,9 +8,9 @@
 
 #include "core/Window.hpp"
 
-#include "render/renderables/primitives/Line.hpp"
-#include "render/renderables/primitives/Rectangle.hpp"
-#include "render/renderables/primitives/Circle.hpp"
+#include "render/primitives/Line.hpp"
+#include "render/primitives/Rectangle.hpp"
+#include "render/primitives/Circle.hpp"
 
 class Render {
 private:

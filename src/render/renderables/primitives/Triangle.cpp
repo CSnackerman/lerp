@@ -1,1 +1,0 @@
-#include "render/renderables/primitives/Triangle.hpp"

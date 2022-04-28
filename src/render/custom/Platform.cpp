@@ -1,4 +1,4 @@
-#include "render/renderables/custom/Platform.hpp"
+#include "render/custom/Platform.hpp"
 
 Platform::Platform (
     Vector2D position,

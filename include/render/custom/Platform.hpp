@@ -3,7 +3,7 @@
 
 #include "core/Clock.hpp"
 #include "render/Render.hpp"
-#include "render/renderables/primitives/Rectangle.hpp"
+#include "render/primitives/Rectangle.hpp"
 
 class Platform {
 protected:

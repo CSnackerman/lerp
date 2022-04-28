@@ -1,4 +1,4 @@
-#include "render/renderables/primitives/Rectangle.hpp"
+#include "render/primitives/Rectangle.hpp"
 
 Rectangle::Rectangle() :
     sdl_rect ({0, 0, 1, 1}),

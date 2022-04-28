@@ -1,4 +1,4 @@
-#include "render/renderables/custom/PatrolPlatform.hpp"
+#include "render/custom/PatrolPlatform.hpp"
 
 PatrolPlatform::PatrolPlatform (
     Vector2D position,

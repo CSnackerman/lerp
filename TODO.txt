@@ -1,2 +1,0 @@
-1. remove renderables directory
-2. create Platform class
