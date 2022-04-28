@@ -27,7 +27,6 @@ public:
     void initialize();
     void run();
     void quit();
-    
 };
 
 #endif
