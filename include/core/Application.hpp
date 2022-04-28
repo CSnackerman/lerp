@@ -25,6 +25,7 @@ private:
     float progressor;
 
     Platform platform;
+    PatrolPlatform patrolPlatform;
     
 public:
     Application();

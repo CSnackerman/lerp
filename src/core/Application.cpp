@@ -5,10 +5,12 @@ Application::Application() :
     p2 ({700, 500}),
     patrolProgress (0.0f),
     progressor (0.2),
-    platform ({{200, 350}, 100, 50, Color::green})
+    platform ({{200, 350}, 100, 50, Color::green}),
+    patrolPlatform ({{100, 500}, 100, 50, Color::blue})
 {
     testRect = Rectangle(p1, 50, 50, Color::magenta);
     testLine = Line(p1, p2, Color::cyan);
+    patrolPlatform.setPatrol ({100, 500}, {700, 500});
 }
 
 void Application::initialize() {
@@ -39,11 +41,14 @@ void Application::run() {
     testRect.moveTo (newPosition);
     // -----
 
+    patrolPlatform.patrol();
+
     Render::clear();
 
     Render::rectangle(testRect);
     Render::line(testLine);
     platform.render();
+    patrolPlatform.render();
 
     Render::update();
 }
