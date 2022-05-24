@@ -17,6 +17,9 @@ Execute `brew install sdl2 sdl2_gfx pkg-config`
 1. Execute `./build.sh`
 2. Execute `./run.sh`
 
+#### Windows 11
+Coming soon...
+
 
 
 Feel free to make any changes you like.
